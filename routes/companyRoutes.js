@@ -5,11 +5,11 @@ import {
     updateCompanyProfile,
     softDeleteCompanyProfile,
     
-} from '../controllers/companyController.js'
-import { authCompanyMiddleware } from '../middlewares/authMiddleware.js'
-import { setTenant } from '../middlewares/tenantMiddleware.js'
-import { passwordUpdateSchema } from '../validators/companyValidator.js'
-import {validateRequest} from '../middlewares/validateRequest.js'
+} from '../../controllers/companyController.js'
+import { authCompanyMiddleware } from '../../middlewares/authMiddleware.js'
+import { setTenant } from '../../middlewares/tenantMiddleware.js'
+import { passwordUpdateSchema } from '../../validators/companyValidator.js'
+import {validateRequest} from '../../middlewares/validateRequest.js'
 
 
 const router = express.Router()

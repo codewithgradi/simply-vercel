@@ -5,9 +5,9 @@ import {
     getRecentCkeckIns,
     getRoomsStats,
     getTotalCheckIns,
-} from '../controllers/analysisController.js'
-import {authCompanyMiddleware} from '../middlewares/authMiddleware.js'
-import {setTenant} from '../middlewares/tenantMiddleware.js'
+} from '../../controllers/analysisController.js'
+import {authCompanyMiddleware} from '../../middlewares/authMiddleware.js'
+import {setTenant} from '../../middlewares/tenantMiddleware.js'
 
 const router = express.Router()
 router.use(authCompanyMiddleware)

@@ -1,19 +1,19 @@
 import 'dotenv/config'
 import express from 'express'
-import authRoutes from './routes/authRoutes.js'
-import frontEndGetRooms from './routes/frontendGetRooms.js'
-import visitorRoutes from './routes/visitorRoutes.js'
-import companyRoutes from './routes/companyRoutes.js'
-import reactivateProfileRoutes from './routes/reactivateProfileRoute.js'
-import notificationRoutes from './routes/notificationRoutes.js'
-import roomRoutes from './routes/roomRoutes.js'
-import analyticsRoutes from './routes/analyticsRoutes.js'
-import { connectDB } from './config/dbConnect.js';
+import authRoutes from '../routes/authRoutes.js'
+import frontEndGetRooms from '../routes/frontendGetRooms.js'
+import visitorRoutes from '../routes/visitorRoutes.js'
+import companyRoutes from '../routes/companyRoutes.js'
+import reactivateProfileRoutes from '../routes/reactivateProfileRoute.js'
+import notificationRoutes from '../routes/notificationRoutes.js'
+import roomRoutes from '../routes/roomRoutes.js'
+import analyticsRoutes from '../routes/analyticsRoutes.js'
+import { connectDB } from '../config/dbConnect.js';
 import mongoose from 'mongoose';
-import softwareRoutes from './routes/softwareRoutes.js'
+import softwareRoutes from '../routes/softwareRoutes.js'
 import cookieParser from 'cookie-parser'
 import cors from 'cors'
-import feedbackRoutes from './routes/feedbackRoutes.js';
+import feedbackRoutes from '../routes/feedbackRoutes.js';
 // import { verifyConnection} from './emailConfig.js';
 
 const app = express();

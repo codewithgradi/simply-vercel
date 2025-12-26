@@ -1,5 +1,5 @@
 import express from 'express'
-import { Company } from '../model/Company.js';
+import { Company } from '../../model/Company.js';
 import bcrypt from 'bcryptjs';
 
 const router = express.Router()
