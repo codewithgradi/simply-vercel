@@ -1,5 +1,5 @@
 import QRCode from 'qrcode';
-import { transporter } from '../../config/emailConfig.js';
+import { transporter } from '../config/emailConfig.js';
 
 export const sendVisitorEmail = async (email, firstName, roomNumber, passCode) => {
     try {
