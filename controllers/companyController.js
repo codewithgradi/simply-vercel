@@ -11,7 +11,7 @@ const updateExistingCompanyPassword = async (req, res) => {
 
         const companyId = req.user._id;
 
-        const company = await Company.findById(companyId);
+        const company = await Company.findById(companyId).select('+password');
         if (!company) {
             return res.status(404).json({ message: "Company not found" });
         }
